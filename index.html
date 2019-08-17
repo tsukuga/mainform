@@ -4,51 +4,69 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Contact - Brand</title>
+    <title>Untitled</title>
+    
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-    <link rel="stylesheet" href="assets/css/Studious-selectfile.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="#">UNIVERSITY OF TSUKUBA</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav navbar-nav ml-auto"></ul>
+    
+    <div id="root">
+    <script type="text/babel">
+ 
+class MakeTable extends React.Component{
+    render(){
+      
+    return (
+ <React.Fragment>
+        <nav className="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div className="container"><a className="navbar-brand logo" href="#">UNIVERSITY OF TSUKUBA</a>
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="nav navbar-nav ml-auto"></ul>
             </div>
         </div>
     </nav>
-    <main class="page contact-page">
-        <section class="portfolio-block contact">
-            <div class="container">
-                <div class="heading">
-                    <h2 style="margin-bottom: 0px;">CREDIT CHECKER</h2>
+    <main className="page contact-page">
+        <section className="portfolio-block contact">
+            <div className="container">
+                <div className="heading">
+                    <h2 style={{marginBottom: 0+'px'}}>CREDIT CHECKER</h2>
                 </div>
                 <form style="padding: 50px;">
-                    <div class="form-group"><label for="name">所属</label><input class="form-control item" type="text" id="name"></div>
-                    <div class="form-group"><label for="subject">成績データ</label>
-                        <div class="custom-file"><input type="file" class="custom-file-input"><label class="custom-file-label">Upload File</label></div>
+                    <div className="form-group"><label for="name">所属</label><input className="form-control item" type="text" id="name"/></div>
+                    <div className="form-group"><label for="subject">成績データ</label>
+                        <div className="custom-file"><input type="file" className="custom-file-input"/><label className="custom-file-label">Upload File</label></div>
                     </div>
-                    <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Submit Form</button></div>
+                    <div className="form-group"><button className="btn btn-primary btn-block btn-lg" type="submit">Submit Form</button></div>
                 </form>
             </div>
         </section>
     </main>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="links"></div>
-            <p style="margin-bottom: 4px;">筑波大学国際総合学類卒</p>
-            <p style="margin-bottom: 4px;">バグ等お問い合わせはこちらへ</p>
-            <div class="social-icons" style="margin-top: 8px;"><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+    <footer className="page-footer">
+        <div className="container">
+            <div className="links"></div>
+            <p style={{marginBottom: 4+'px'}}>筑波大学国際総合学類卒</p>
+            <p style={{marginBottom: 4+'px'}}>バグ等お問い合わせはこちらへ</p>
+            <div className="social-icons" style={{marginTop: 0+'px'}}><a href="#"><i className="icon ion-social-twitter"></i></a></div>
         </div>
     </footer>
+      </React.Fragment>
+)
+ 
+   }
+  }
+  
+  ReactDOM.render(<MakeTable/>, document.getElementById('root'));
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Studious-selectfile.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
+  </div>
 </body>
 
 </html>
