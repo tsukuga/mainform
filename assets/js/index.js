@@ -234,6 +234,5 @@ class MakeTable extends React.Component{
 
 
   ReactDOM.render(<MakeTable/>, document.getElementById('root'));
-    </script>
 
 
